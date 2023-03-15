@@ -1,8 +1,17 @@
 package beverages;
 
-public class Tea implements Beverage {
+import java.util.ArrayList;
+
+public class Tea extends Beverage {
+
+    public Tea(ArrayList<Supplement> supplements){
+        for (Supplement supplement : supplements) {
+            addSupplement(supplement);
+        }
+    }
+
     @Override
-    public double price() {
+    double initialPrice() {
         return 1.5;
     }
 }

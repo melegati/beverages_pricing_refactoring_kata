@@ -1,16 +1,8 @@
 package beverages;
 
-import java.util.ArrayList;
+public class Coffee implements Beverage {
 
-public class Coffee extends Beverage {
-
-    public Coffee(ArrayList<Supplement> supplements){
-        for (Supplement supplement : supplements) {
-            addSupplement(supplement);
-        }
-    }
-
-    public double initialPrice(){
+    public double price(){
         return 1.2;
     }
     
